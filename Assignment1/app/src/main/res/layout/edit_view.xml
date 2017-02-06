@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Name:"
+        android:id="@+id/name"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Date:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Neck:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Bust:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Chest:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Waist:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Hip:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:text="Inseam:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="Comment:"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_width="110dp" />
+
+</LinearLayout>
+
+
+    <Button
+        android:text="Edit Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editCommit" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editName"
+            android:hint="@string/NameOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:hint="@string/DataOfPeople"
+            android:focusable="false"
+            android:id="@+id/editDate" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editNeck"
+            android:hint="@string/NeckOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editBust"
+            android:hint="@string/BustOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editChest"
+            android:hint="@string/ChestOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editWaist"
+            android:hint="@string/WaistOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editHip"
+            android:hint="@string/HipOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editInseam"
+            android:hint="@string/InseamOfPeople"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editComment"
+            android:hint="@string/CommentOfPeople"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

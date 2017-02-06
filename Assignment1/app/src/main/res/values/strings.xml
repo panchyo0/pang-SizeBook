@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">qpang-SizeBook </string>
+
+    <string name="Title">Dimensions of customers </string>
+
+    <string name="Records">List Records</string>
+    <string name="Add">Add New Records</string>
+
+    <!--<string name="title_activity_add_to_database">AddToDatabase</string>-->
+    <string name="ButtonInAddTo">Add</string>
+    <string name="NameOfPeople">Name(mandatory)</string>
+    <string name="DataOfPeople">Data YYYY-MM-DD</string>
+    <string name="NeckOfPeople">Neck in inches(20 to 500)</string>
+    <string name="BustOfPeople">Bust in inches(20 to 500)</string>
+    <string name="ChestOfPeople">Chest in inches(20 to 500)</string>
+    <string name="WaistOfPeople">Waist in inches(20 to 500)</string>
+    <string name="HipOfPeople">Hip in inches(20 to 500)</string>
+    <string name="InseamOfPeople">Inseam in inches(20 to 500)</string>
+    <string name="CommentOfPeople">Comment !</string>
+    <string name="title_activity_list_of_record">Record !</string>
+    <string name="title_activity_add_to_data">Add New Data !</string>
+</resources>
