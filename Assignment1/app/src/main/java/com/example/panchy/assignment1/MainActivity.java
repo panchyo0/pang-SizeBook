@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2017 CMPUT 301. University of Alberta - All rights reserved. You may use,
+ * distribute, or modify this code under terms and conditions of Code of Student Behaviour at
+ * University of Alberta. You can find a copy of the lisence in this project. Otherwise please
+ * contact qpang@ualberta.ca
+ */
+
 package com.example.panchy.assignment1;
 
 import android.content.Context;
@@ -26,8 +33,26 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class is the main view class of the project. <br> In this class,
+ * user interaction and file manipulation is performed .
+ * All files are in the form of "json" files that are stored in Emulator's
+ * accessible from Android Deice Monitor:
+ *
+ * @author pang qi
+ * @version 1.1
+ * @since 1.0
+ */
 
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * The file that all the people are saved there.
+     * The format of the file is JSON
+     * @see #loadFromFile()
+     * @see #saveInFile()
+     */
+
     private TextView myText;
     private Button RecordButton;
     private Button AddButton;
@@ -38,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<People> peopleArrayList;
     public static final String FILENAME="file.sav";
+
+
+    /**
+     * Called when the activity is first created
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -82,12 +113,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    /**
+     * this is a add new click method. when people click add  button main activity will go to
+     * Add to Data activity
+     * @param view
+     */
     public void AddNew(View view){
 
         startActivityForResult(new Intent(MainActivity.this,AddToData.class),1);
     }
 
+    /**
+     * in this method will get all information which is other activity send back
+     * and save it in a json file. when resultcode =1 get pepole obj from AddToData.
+     * when resultcode=2 get the position of people need delete from detail.
+     * when resultcode=4 get the position of people in array and people obj after edit
+     * from detail edit.
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -136,6 +181,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * this is a listall click method. when people click list all button main activity will go to
+     * list all activity
+     * @param view
+     */
     public void ListAll(View view){
         Intent intent=new Intent();
         intent.setClass(MainActivity.this,ListOfRecord.class);
@@ -143,6 +193,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Save tweets in file in JSON format.
+     * @throws FileNotFoundException if folder doesn't exist
+     */
 
 
     private void saveInFile(){
@@ -162,6 +217,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Load people from file
+     * @throws Exception if runtimeexpection
+     * @exception FileNotFoundException if the file is not created
+     */
     private void loadFromFile(){
         try{
             FileInputStream fis=openFileInput(FILENAME);

@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2017 CMPUT 301. University of Alberta - All rights reserved. You may use,
+ * distribute, or modify this code under terms and conditions of Code of Student Behaviour at
+ * University of Alberta. You can find a copy of the lisence in this project. Otherwise please
+ * contact qpang@ualberta.ca
+ */
 package com.example.panchy.assignment1;
 
 import android.app.DatePickerDialog;
@@ -17,6 +23,15 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 
+/**
+ * This class is the edit view class of the project. <br> In this class,
+ * user can edit an exit record information of people after edit will back
+ * to Detail.
+ *
+ * @author pang qi
+ * @version 1.1
+ * @since 1.0
+ */
 public class Detail_edit extends AppCompatActivity {
 
     private EditText name;
@@ -31,6 +46,14 @@ public class Detail_edit extends AppCompatActivity {
 
     private Button editCommit;
     private People peopleInformation;
+
+    /**
+     * Called when the activity is first created
+     * get all edittext and set information. if click editcommit will back to detail and
+     * transform the obj of people after edit
+     * @param savedInstanceState
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -88,17 +111,14 @@ public class Detail_edit extends AppCompatActivity {
                 setResult(RESULT_OK);
 
                 String nameOfPeople = name.getText().toString();
-                //String dateOfPeople = checkEmpty(date);
                 String dateOfPeople=date.getText().toString();
                 if (dateOfPeople.isEmpty()){dateOfPeople=" ";}
                 String neckOfPeople = checkEmpty(neck);
-                //float neckOfPeople = Float.valueOf(checkEmpty(neck));
                 String chestOfPeople = checkEmpty(chest);
                 String bustOfPeople = checkEmpty(bust);
                 String waistOfPeople = checkEmpty(waist);
                 String hipOfPeople = checkEmpty(hip);
                 String inseameOfPeople = checkEmpty(inseame);
-                //String commentOfPeople = checkEmpty(comment);
                 String commentOfPeople=comment.getText().toString();
                 if (commentOfPeople.isEmpty()){commentOfPeople=" ";}
 
@@ -123,7 +143,11 @@ public class Detail_edit extends AppCompatActivity {
 
     }
 
-
+    /**
+     *  check the given edittext is empty or not
+     * @param edittext
+     * @return string with one decimal place
+     */
     private String checkEmpty(EditText edittext) {
         if (edittext.getText().toString().isEmpty()) {
             String str = "0";

@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2017 CMPUT 301. University of Alberta - All rights reserved. You may use,
+ * distribute, or modify this code under terms and conditions of Code of Student Behaviour at
+ * University of Alberta. You can find a copy of the lisence in this project. Otherwise please
+ * contact qpang@ualberta.ca
+ */
 package com.example.panchy.assignment1;
 
 
@@ -17,7 +23,15 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 
-
+/**
+ * This class is the Add to Data base view class of the project. <br> In this class,
+ * user can add a new people to record (database) and this new people will become a obj
+ * and back to Main Activity.
+ *
+ * @author pang qi
+ * @version 1.1
+ * @since 1.0
+ */
 public class AddToData extends AppCompatActivity {
 
     private EditText name;
@@ -32,6 +46,10 @@ public class AddToData extends AppCompatActivity {
     private Button AddButton;
     private People peopleInformation;
 
+    /**
+     * Called when the activity is first created
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +92,13 @@ public class AddToData extends AppCompatActivity {
 
     }
 
+    /**
+     * this is a override method of addbutton on click listener
+     * in this method will get all information from user input
+     * and translate it to an people obj. after that will tranfor this
+     * obj to main activity.
+     */
+
     class AddButtonFinal implements View.OnClickListener {
 
         @Override
@@ -89,7 +114,6 @@ public class AddToData extends AppCompatActivity {
             String waistOfPeople = checkEmpty(waist);
             String hipOfPeople = checkEmpty(hip);
             String inseameOfPeople = checkEmpty(inseame);
-            //String commentOfPeople = checkEmpty(comment);
             String commentOfPeople = comment.getText().toString();
             if (commentOfPeople.isEmpty()){commentOfPeople=" ";}
 
@@ -109,7 +133,11 @@ public class AddToData extends AppCompatActivity {
         }
     }
 
-
+    /**
+     * check the given edittext is empty or not
+     * @param edittext
+     * @return
+     */
 
     private String checkEmpty(EditText edittext) {
         if (edittext.getText().toString().isEmpty()) {

@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2017 CMPUT 301. University of Alberta - All rights reserved. You may use,
+ * distribute, or modify this code under terms and conditions of Code of Student Behaviour at
+ * University of Alberta. You can find a copy of the lisence in this project. Otherwise please
+ * contact qpang@ualberta.ca
+ */
 package com.example.panchy.assignment1;
 
 
@@ -9,7 +15,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.google.gson.Gson;
 
-
+/**
+ * This class is showing the detail view class of the project. <br> In this class,
+ * user can see a exit record information of people and can delete an exit record. After finish will
+ * back to Main Activity.
+ *
+ * @author pang qi
+ * @version 1.1
+ * @since 1.0
+ */
 public class Detail extends AppCompatActivity {
 
     private Button deleteButton;
@@ -17,6 +31,12 @@ public class Detail extends AppCompatActivity {
 
     private TextView neckInf;
 
+    /**
+     * Called when the activity is first created
+     * get all edittext and set information. if click delete, one exit information will delete
+     * if click edit will get the view of detail edit activity.
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +72,13 @@ public class Detail extends AppCompatActivity {
         });
     }
 
+    /**
+     * in this method will transfor the edit obj which get from detail edit and it position in
+     * people array list to main activity
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
