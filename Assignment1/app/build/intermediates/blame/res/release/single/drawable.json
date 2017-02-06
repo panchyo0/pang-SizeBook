@@ -24,12 +24,12 @@
         "source": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/merged/release/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/merged/release/drawable/abc_ic_clear_material.xml",
         "source": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/merged/release/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/merged/release/drawable/design_fab_background.xml",

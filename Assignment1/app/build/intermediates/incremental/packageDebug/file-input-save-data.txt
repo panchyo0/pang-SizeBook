@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 06 01:03:35 MST 2017
+#Mon Feb 06 01:11:25 MST 2017
 20.base=/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/Panchy/Desktop/2/qpang-SizeBook/Assignment1/app/build/intermediates/res/resources-debug.ap_
 439.set=ANDROID_RESOURCE
