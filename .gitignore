@@ -1,5 +1,4 @@
 # Built application files
-*.apk
 *.ap_
 
 # Files for the ART/Dalvik VM
@@ -32,7 +31,7 @@ proguard/
 captures/
 
 # Intellij
-*.iml
+
 .idea/workspace.xml
 
 # Keystore files
